@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body{
+    background-color: #632432;
+    font-family: Arial;
+}
+
+#main-cotainer{
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+    background-color: white;
+    text-align: left;
+    width: 100%;
+}
+
+th, td{
+    border: solid 1px black;
+}
+
+
+
+form  {
+    margin: auto;
+    width: 30%;
+    max-height: 200px;
+    background: #001d66;
+    padding: 10px;
+    opacity: 90%;
+}

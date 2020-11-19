@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Stom | Login </title>
+    <link rel="stylesheet" href="../css/master.css">
+  </head>
+  <body>
+
+    <div class="login-box">
+      <!-- <img src="../images/logo4.png" class="avatar" alt="Avatar Image"> -->
+      <h1>Inicio de sesión</h1>
+      <form method="post" action="../controlador/validar.php" enctype="multipart/form-data" autocomplete="off">
+        <!-- USERNAME INPUT -->
+        <label for="username">Usuario</label>
+        <input type="text" class="form-control mb-4" name="nombre" id="user" placeholder="Ingresa tu usuario" required>
+        <!-- PASSWORD INPUT -->
+        <label for="password">Contraseña</label>
+        <input type="password" class="form-control mb-4" name="contrasena" id="pass" placeholder="Ingresa tu contraseña" required>
+        <input type="submit" value="Acceder">
+        <a href="#">¿Olvidaste tu contraseña?</a><br>
+        <a href="../vista/register.html">¿No tienes una cuenta?</a>
+      </form>
+    </div>
+  </body>
+</html>
