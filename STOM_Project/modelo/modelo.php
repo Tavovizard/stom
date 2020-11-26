@@ -100,4 +100,28 @@
             }
             return $resultado;
         }
+        
+        function modifUsuario( $params ){
+            $error = "";
+            $valor = "";
+           
+            $nombre = $params["nombre"];
+            $contrasena = $params["contrasena"];
+            $telefono = $params["telefono"];
+            $correo = $params["correo"];
+            
+            $query = "UPDATE usuarios SET nombre='$nombre', telefono='$telefono', correo='$correo' WHERE contrasena='$contrasena'";
+            
+            
+                
+                if(!empty( $nombre) && !empty( $contrasena) && !empty( $telefono) && !empty( $correo)) {
+                    if(! $this->conn->query($query)){
+                        $error = 'Ocurrio un error ejecutando el query [' . $this->conn->error . ']';
+                    }
+                    $valor = $this->conn->affected_rows;
+                }
+            $resul[] = $valor;
+            $resul[] = $error;
+            return $resul;
+        }
     }
