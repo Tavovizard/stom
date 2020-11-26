@@ -93,7 +93,7 @@
 	</div>
 </header>
         <div class="header">
-            <img class="avatar" src="../images/avatares/99424586_931788893961221_467389679864381440_o.jpg"/>
+            <img class="avatar" src="../images/avatares/61e3be3d46618fcf6eba1b1c452fd5fd.jpg"/>
             <h1 class="user-name"><?php echo "$nombreU"; ?></h1>
         </div>
         <ul class="register-box">
@@ -102,7 +102,7 @@
                 <label for="username">Usuario</label>
                 <input type="text" placeholder="Ingresa tu usuario" name="nombre" value="<?php echo"$nombre" ?>" required>
                 <label for="password">Contraseña</label>
-                <input type="password"  name="contrasena" readonly>
+                <input type="password"  name="contrasena" Value="<?php echo"$contrasena" ?>" readonly>
                 <label for="text">Telefono</label>
                 <input type="text" placeholder="Ingresa tu numero de telefono" name="telefono" value="<?php echo"$telefono" ?>" required>
                 <label for="correo">Correo</label>
